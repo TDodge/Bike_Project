@@ -1,0 +1,55 @@
+Data Model
+
+**Product_IDs**
+
+source - url of where the product information is pulled from (eBay, pinkbikes, etc..)
+product_url - unique URL that links to the product
+product_id - unique to website. i.e. ebay_id
+date/timestamp_initial - when was the product initially pulled down
+date/timestamp_recent - when was the product last seen on the site
+
+**Product_Attributes**
+
+website/source_id - url of where the product information is pulled from (eBay, pinkbikes, etc..)
+product_id - unique to website. i.e. ebay_id
+title - product title
+universal_id - is there a universal_id that is unchanged across various websites/sources? i.e. a bike VIN
+type - type of bike. i.e. mountain, road, etc...
+brand - what brand makes the product. i.e. trek, specialized, cannondale, etc...
+model - what line of product is this from the brand. i.e. Trek Farley 7 "Farley 7" is the model
+year - year the bike was released
+color - bike color
+size - size of the bike
+gender - is it made for M/F or is it unisex
+condition - what condition the bike is in if used
+listing_type - "Buy now" or "bid". Maybe other statuses? Revist*
+additional - captures additional details in a JSON format that may be valuable to have down the road, but aren't currently essential
+
+**Shipping**
+
+website/source_id - url of where the product information is pulled from (eBay, pinkbikes, etc..)
+product_id - unique to website. i.e. ebay_id
+shipping_method - how can the bike be delivered? i.e. - online, local pick-up, etc...
+shipping_cost - what is the cost of shipping
+shipping_dets - field to capture additional details
+
+**Pricing**
+
+website/source_id - url of where the product information is pulled from (eBay, pinkbikes, etc..)
+product_id - unique to website. i.e. ebay_id
+date - 
+price - 
+
+--Primary Key will be all 4 fields combined
+
+**Mapping - website/source**
+
+source - url of where the product information is pulled from (eBay, pinkbikes, etc..)
+source_id - generate ID for improved storage and performance
+
+
+*Note - According to Dr. Chuck, all primary and foreign keys should be integers in a relational database schema
+
+
+
+
