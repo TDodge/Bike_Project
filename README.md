@@ -1,6 +1,6 @@
 ## Overview
 
-**Wiki**: https://github.com/TDodge/BikeProject/wiki
+**Wiki**: https://github.com/TDodge/Bike_Project/wiki
 
 ## Objective
 
